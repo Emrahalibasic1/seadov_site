@@ -1078,3 +1078,80 @@ a.card-meta-text:is(:hover, :focus) { color: var(--tan-crayola); }
   .product-list { grid-template-columns: repeat(4, 1fr); }
 
 }
+
+/*email*/
+.contact-container{
+ background: #fff;
+}
+.contact-container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+#naslov{
+  font-size: 3.3rem;
+  margin-bottom: -30px;
+  margin-left: 30px;
+}
+
+.contact-inputs{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+.contact-left textarea{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+.contact-inputs:focus{
+  border: 2px solid #ff994f;
+
+}
+.contact-inputs::placeholder{
+  color: #ff994f;
+
+}
+.contact-left button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg,#ff994f,#fa6d86);
+}
+#ime{
+  margin-bottom: -25px;
+}
+#email{
+  margin-bottom: 30px;
+}
+#aaaa{
+  margin-bottom: -4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#btn{
+  margin-bottom: 333px;
+}
+@media (max-width:800px) {
+      .contact-inputs{
+        width: 80vw;
+
+      }
+}
