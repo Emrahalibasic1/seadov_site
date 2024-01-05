@@ -84,3 +84,18 @@ const filter = function () {
 }
 
 addEventOnElem(filterBtns, "click", filter);
+
+const openModal = () =>{
+  let modalWindow = document.querySelector('.popup-modal');
+  let overlay = document.querySelector('.overlay');
+  modalWindow.style.display = 'block';
+  overlay.style.display = 'block';
+
+}
+
+const closeModal = () => {
+  let modalWindow = document.querySelector('.popup-modal');
+  let overlay = document.querySelector('.overlay');
+  modalWindow.style.display = 'none';
+  overlay.style.display = 'none';
+}
