@@ -1212,110 +1212,67 @@ a.card-meta-text:is(:hover, :focus) { color: var(--tan-crayola); }
 	background-color: rgba(0, 0, 0, 0.5);
 }
 /*secija*/      .gallery-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200vh;
-  background-color: #f0f0f0;
-}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
 
-.gallery {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 1200px;
-}
+        .gallery {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  margin-right: 20px;
-  width: 100%; /* Dodano kako bi se osigurala responzivnost na svim uređajima */
-  align-items: center;
-}
+        .column {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
 
-.image {
-  width: 200px;
-  height: 200px;
-  margin: 5px;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-}
+        .image {
+          width: 170px;
+          height: 190px;
+          margin: 5px;
+          cursor: pointer;
+          margin-left: 10px;
+          transition: transform 0.2s ease-in-out;
+        }
 
-.image:hover {
-  transform: scale(1.1);
-}
+        .image:hover {
+            transform: scale(1.1);
+        }
 
-.displayed-image {
-  max-width: 30%;
-  height: auto;
-  margin: 20px;
-  margin-left: 560px;
-  margin-bottom: 1567px;
-}
-/*
-@media (max-width: 1200px) {
-  .gallery-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-}
+        .displayed-image {
+          max-width: 50%;
+          height: auto;
+          margin: 20px;
+        }
 
-.gallery {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-}
-
-.image {
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-}
-
-.image:hover {
-    transform: scale(1.1);
-}
-
-.displayed-image {
-    max-width: 100%;
-    height: auto;
-    margin: 20px;
-}
-
-}
 
 
 
 
 @media (max-width: 768px) {
   .gallery{
-    margin-top: 260px;
+    margin-top: 340px;
   }
   .image{
     margin-bottom: 50px;
     height: 140px;
     width: 300px;
+    margin-left: 50px;
   }
   .column {
       margin-right: 0;
       margin-bottom: -25px;
   }
   .displayed-image {
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     margin: 20px;
-    margin-left: 170px;
+    margin-left: 82px;
     margin-bottom: 270px;
   }
   .contact-container{
@@ -1340,4 +1297,10 @@ a.card-meta-text:is(:hover, :focus) { color: var(--tan-crayola); }
     margin-left: 30px;
     margin-bottom: 270px;
   }
-}*/
+  .image{
+    margin-bottom: 50px;
+    height: 140px;
+    width: 300px;
+    margin-left: 50px;
+  }
+}
