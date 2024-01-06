@@ -1211,6 +1211,7 @@ a.card-meta-text:is(:hover, :focus) { color: var(--tan-crayola); }
 	z-index: 100;
 	background-color: rgba(0, 0, 0, 0.5);
 }
+<<<<<<< HEAD
 
 /*secija*/
 .small-img-row{
@@ -1222,3 +1223,5 @@ a.card-meta-text:is(:hover, :focus) { color: var(--tan-crayola); }
   cursor: pointer;
   
 }
+=======
+>>>>>>> fc0698a0b0979046b1a87213468907f16a485e6d

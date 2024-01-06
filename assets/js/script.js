@@ -99,6 +99,7 @@ const closeModal = () => {
   modalWindow.style.display = 'none';
   overlay.style.display = 'none';
 }
+<<<<<<< HEAD
 
 
 
@@ -121,3 +122,5 @@ var SmallImg = document.getElementsByClassName("small-img");
     {
       ProductImg.src = SmallImg[3].src;
     }
+=======
+>>>>>>> fc0698a0b0979046b1a87213468907f16a485e6d
