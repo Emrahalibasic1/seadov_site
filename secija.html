@@ -197,62 +197,26 @@
 
   <main>
     <article>
+   
+    
 
+      <div class="gallery-container">
+        <div class="gallery">
+            <div class="column">
+                <img class="image" src="assets/images/seciaj.jpg" alt="Slika 1" onclick="changeImage('assets/images/seciaj.jpg')">
+            </div>
+            <div class="column">
+                <img class="image" src="assets/images/leza.jpg" alt="Slika 2" onclick="changeImage('assets/images/leza.jpg')">
+            </div>
+            <div class="column">
+                <img class="image" src="assets/images/stolica.jpg" alt="Slika 3" onclick="changeImage('assets/images/stolica.jpg')">
+            </div>
+            <!-- Dodajte dodatne slike prema potrebi -->
+        
+            <img class="displayed-image" src="assets/images/seciaj.jpg" alt="Prikazana slika">
+        </div>
+    </div>
      
-
-
-
-
-
-      <!-- 
-        - #PRODUCTS
-      -->
-
-      <section class="section product" id="product" aria-label="product">
-        <div class="container">
-
-         
-
-
-                <div class="small-container">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="./assets/images/seciaj.jpg"  style="width: 500px; height: 500px;" loading="lazy"
-                            alt="Animi Dolor Pariatur" class="img-cover" id="ProductImg">
-
-
-                            <div class="small-img-row">
-                                <div class="smal-img-col">
-                                    <img src="./assets/images/seciaj.jpg"  style="width: 200px; height: 200px;" loading="lazy"
-                                    alt="Animi Dolor Pariatur" class="img-cover">
-                                </div>
-
-                                <div class="smal-img-col">
-                                    <img src="./assets/images/leza.jpg"  style="width: 200px; height: 200px;" loading="lazy"
-                                    alt="Animi Dolor Pariatur" class="img-cover" class="small-img">
-                                </div>
-
-                                <div class="smal-img-col">
-                                    <img src="./assets/images/stolica.jpg"  style="width: 200px; height: 200px;" loading="lazy"
-                                    alt="Animi Dolor Pariatur" class="img-cover" class="small-img">
-                                </div>
-
-                                <div class="smal-img-col">
-                                    <img src="./assets/images/seciaj.jpg"  style="width: 200px; height: 200px;" loading="lazy"
-                                    alt="Animi Dolor Pariatur" class="img-cover" class="small-img">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-          
-          
-      <!-- 
-        - #NEWSLETTER
-      -->
- 
-
     </article>
   </main>
 
@@ -264,175 +228,6 @@
     - #FOOTER
   -->
 
-  <footer class="footer">
-    <div class="container">
-
-      <div class="footer-top section">
-
-        <div class="footer-brand">
-
-          <a href="#" class="logo">S A N </a>
-
-          <ul>
-
-            <li class="footer-list-item">
-              <ion-icon name="location-sharp" aria-hidden="true"></ion-icon>
-
-              <address class="address">
-                S A N, Malovina bb, BiH
-              </address>
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="call-sharp" aria-hidden="true"></ion-icon>
-
-              <a href="tel:+1234567890" class="footer-link">+387111111</a>
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="logo-WhatsApp" aria-hidden="true"></ion-icon>
-
-              <a href="viber://chat?number=+38762067138" class="footer-link">+387111111</a>
-            </li>
-
-            <li>
-              <ul class="social-list">
-
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-TikTok"></ion-icon>
-                  </a>
-                </li>
-
-              </ul>
-            </li>
-
-          </ul>
-
-        </div>
-<!-------- 
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Pomoc i informacije</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Help & Contact Us</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Returns & Refunds</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Online Stores</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terms & Conditions</a>
-          </li>
-
-        </ul>
- 
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">About Us</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">About Us</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">What We Do</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">FAQ Page</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Contact Us</a>
-          </li>
-
-        </ul>
-
-        <div class="footer-list">
-
-          <p class="footer-list-title">Newsletter</p>
-
-          <form action="" class="footer-form">
-            <input type="email" name="email_address" placeholder="Your email address" required class="email-field">
-
-            <button type="submit" class="footer-form-btn">
-              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </button>
-          </form>
-
-          <div class="wrapper">
-
-            <a href="#" class="footer-link">Term & Condition</a>
-            <a href="#" class="footer-link">Policy</a>
-            <a href="#" class="footer-link">Map</a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-
-        <p class="copyright">
-          &copy; 2022 All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>.
-        </p>
-
-      </div>
-
-    </div>
-  </footer>
-
-
------------>
-      <div class="contact-container">
-
-          <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-            <div class="contact-left-titile">
-              <h1 id="naslov">S A N</h1>
-              <br>
-            </div>
-            <input type="hidden" name="access_key" value="10aa7815-5234-4acc-b620-0fc6fd5a78fe">
-            <input type="text"  name="name" placeholder="Vase ime" class="contact-inputs" id="ime" required>
-            <input type="email"  name="email" placeholder="Vas E-mail" class="contact-inputs" id="email" required>
-            <textarea name="message" placeholder="Kako vam mozemo pomoc?" class="contact-inputs" id="aaaa" required></textarea>
-            <button type="submit" id="btn">Posalji</button>
-          </form>
-
-      </div>
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
-  </a>
-      
-     
 
 
 

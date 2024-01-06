@@ -1211,17 +1211,133 @@ a.card-meta-text:is(:hover, :focus) { color: var(--tan-crayola); }
 	z-index: 100;
 	background-color: rgba(0, 0, 0, 0.5);
 }
-<<<<<<< HEAD
-
-/*secija*/
-.small-img-row{
+/*secija*/      .gallery-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
+  background-color: #f0f0f0;
 }
-.small-img-col{
-  flex-basis: 24%;
+
+.gallery {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1200px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 100%; /* Dodano kako bi se osigurala responzivnost na svim uređajima */
+  align-items: center;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
   cursor: pointer;
-  
+  transition: transform 0.2s ease-in-out;
 }
-=======
->>>>>>> fc0698a0b0979046b1a87213468907f16a485e6d
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.displayed-image {
+  max-width: 30%;
+  height: auto;
+  margin: 20px;
+  margin-left: 560px;
+  margin-bottom: 1567px;
+}
+/*
+@media (max-width: 1200px) {
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+.displayed-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+}
+
+}
+
+
+
+
+@media (max-width: 768px) {
+  .gallery{
+    margin-top: 260px;
+  }
+  .image{
+    margin-bottom: 50px;
+    height: 140px;
+    width: 300px;
+  }
+  .column {
+      margin-right: 0;
+      margin-bottom: -25px;
+  }
+  .displayed-image {
+    max-width: 50%;
+    height: auto;
+    margin: 20px;
+    margin-left: 170px;
+    margin-bottom: 270px;
+  }
+  .contact-container{
+    margin-top: -58px;
+    margin-right: 60px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  
+  .column {
+      width: 100%;
+      margin-right: 15px;
+      margin-top: 15px;
+      margin-bottom: -20px;
+  }
+  .displayed-image {
+    max-width: 85%;
+    height: auto;
+    margin: 20px;
+    margin-left: 30px;
+    margin-bottom: 270px;
+  }
+}*/
