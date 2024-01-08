@@ -126,15 +126,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+
   function pretraziSekcije() {
     var unosPretrage = searchInput.value.toLowerCase();
     var sekcije = document.getElementsByClassName('sekcija');
-
+  
+    
     // Provera za svaku sekciju
     for (var i = 0; i < sekcije.length; i++) {
       var sekcijaId = sekcije[i].id.toLowerCase();
       
       if (unosPretrage === sekcijaId) {
+       
         // Pronađena podudaranje, preusmeri korisnika na odgovarajuću sekciju
         window.location.href = '#' + sekcijaId;
         return;
@@ -147,3 +150,4 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   
 });
+
