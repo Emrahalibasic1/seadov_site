@@ -106,3 +106,44 @@ function changeImage(imageSrc) {
   var displayedImage = document.querySelector('.displayed-image');
   displayedImage.src = imageSrc;
 }
+
+/* search input  */
+document.addEventListener('DOMContentLoaded', function () {
+  var searchInput = document.getElementById('searchInput');
+  var searchButton = document.getElementById('searchButton');
+
+  searchButton.addEventListener('click', function () {
+    pretraziSekcije();
+  });
+
+  searchInput.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+      pretraziSekcije();
+    }
+    else if(event.click == 'search')
+    {
+      pretraziSekcije();
+    }
+  });
+
+  function pretraziSekcije() {
+    var unosPretrage = searchInput.value.toLowerCase();
+    var sekcije = document.getElementsByClassName('sekcija');
+
+    // Provera za svaku sekciju
+    for (var i = 0; i < sekcije.length; i++) {
+      var sekcijaId = sekcije[i].id.toLowerCase();
+      
+      if (unosPretrage === sekcijaId) {
+        // Pronađena podudaranje, preusmeri korisnika na odgovarajuću sekciju
+        window.location.href = '#' + sekcijaId;
+        return;
+      }
+      
+    }
+
+    // Ako nema podudaranja
+    alert('Nema rezultata za pretragu.Unos pogresan!');
+  }
+  
+});

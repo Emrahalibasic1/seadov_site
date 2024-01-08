@@ -1276,7 +1276,7 @@ a.card-meta-text:is(:hover, :focus) { color: var(--tan-crayola); }
     margin-bottom: 270px;
   }
   .contact-container{
-    margin-top: -58px;
+    margin-top: -30px;
     margin-right: 60px;
   }
 }

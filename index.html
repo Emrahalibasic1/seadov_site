@@ -52,9 +52,9 @@
     <div class="container">
 
       <div class="input-wrapper">
-        <input type="search" name="search" placeholder="Pretrazi ovdje..." class="input-field">
+        <input type="search" name="search" id="searchInput" placeholder="Pretrazi ovdje..." class="input-field">
 
-        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        <ion-icon name="search-outline" aria-hidden="true" id="searchButton"></ion-icon>
       </div>
      
       <a href="#" class="logo"><!-------<img src="assets/images/logo.jpg" style="width: 250px;height: 100px;" alt="">-------->S A N</a>
@@ -329,15 +329,15 @@
               </li>
 
               <li class="filter-btn-item">
-                <button class="filter-btn" data-filter-btn="accessory">Secije</button>
+                <button class="filter-btn sekcija" id="secija" data-filter-btn="accessory">Secije</button>
               </li>
 
               <li class="filter-btn-item">
-                <button class="filter-btn" data-filter-btn="decoration">Lezajevi</button>
+                <button class="filter-btn sekcija" id="lezaj" data-filter-btn="decoration">Lezajevi</button>
               </li>
 
               <li class="filter-btn-item">
-                <button class="filter-btn" data-filter-btn="furniture">Stolice</button>
+                <button class="filter-btn sekcija" id="stolica" data-filter-btn="furniture">Stolice</button>
               </li>
 
             </ul>
@@ -349,7 +349,7 @@
               <div class="product-card">
 
                 <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
-                  <img src="./assets/images/seciaj.jpg" width="300" height="300" loading="lazy"
+                  <img src="./assets/images/seciaj.jpg"  width="300" height="300" loading="lazy"
                     alt="Animi Dolor Pariatur" class="img-cover">
 
                   <ul class="card-action-list">
@@ -406,7 +406,7 @@
               <div class="product-card">
 
                 <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
-                  <img src="./assets/images/lezaj.jpg" width="300" height="300" loading="lazy" alt="Art Deco Home"
+                  <img src="./assets/images/lezaj.jpg"  width="300" height="300" loading="lazy" alt="Art Deco Home"
                     class="img-cover">
 
                   <ul class="card-action-list">
